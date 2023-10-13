@@ -36,11 +36,11 @@ function Read(){
             "categories": []
         }
     ];
-    
+
     return(
         <div>
             <h3>Hello from read.js component.</h3>
-            <Books myBooks = {data}></Books>
+            <Books myBooks={data}></Books>
         </div>
     );
 }
