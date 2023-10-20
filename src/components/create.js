@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 function Create(){
-
-    const [title, setTitle] = useState('');
+    // Adding of state variables.
+    const [title, setTitle] = useState(''); 
     const [cover, setCover] = useState('');
     const [author, setAuthor] = useState('');
 
@@ -11,7 +11,7 @@ function Create(){
         console.log("Title: " + title +
                     " Cover: " + cover +
                     " Author: " + author);
-    }
+    } // Show up in the logs.
 
     return(
         <div>
@@ -21,10 +21,10 @@ function Create(){
                     <label>Add Book Title: </label>
                     <input type = "text"
                         className = "form-control"
-                        value = {title}
+                        value = {title} // Text in the input box.
                         onChange = {
                             (e) => { 
-                                setTitle(e.target.value) 
+                                setTitle(e.target.value) // Update value.
                             }
                         }
                     />
@@ -33,10 +33,10 @@ function Create(){
                     <label>Add Book Author: </label>
                     <input type = "text"
                         className = "form-control"
-                        value = {author}
+                        value = {author} // Text in the input box.
                         onChange = {
                             (e) => { 
-                                setAuthor(e.target.value) 
+                                setAuthor(e.target.value) // Update value.
                             }
                         }
                     />
@@ -45,15 +45,15 @@ function Create(){
                     <label>Add Book Cover: </label>
                     <input type = "text"
                         className = "form-control"
-                        value = {cover}
+                        value = {cover} // Text in the input box.
                         onChange = {
                             (e) => { 
-                                setCover(e.target.value) 
+                                setCover(e.target.value) // Update value.
                             }
                         }
                     />
                 </div>
-                <div>
+                <div> 
                     <input type = "submit" value = "Add Book"></input>
                 </div>
             </form>
